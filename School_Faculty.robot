@@ -50,34 +50,33 @@ Login
     Maximize Browser Window
     # Click Button    xpath=//*[@id="app"]/div/main/div[2]/div[2]/form/div[2]/div/button
     # Sleep    5     
-    Input Text    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[1]/div[2]/input    ${In_Username}
+    Input Text    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[1]/div[2]/input    ${In_Username}
     Sleep    5    
-    Click Element    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[2]/div/button/span[1]  
-    Sleep    20   
+    Click Element    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[2]/div/button/span[1]  
+    Sleep    10   
     Page Should Contain    Enter a valid email address
     Sleep    5
-    Input Text    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[1]/div[2]/input    ${Val_Username}
+    Input Text    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[1]/div[2]/input    ${Val_Username}
     Sleep    3    
-    Click Element    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[2]/div/button/span[1]
+    Click Element    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[2]/div/button/span[1]
     Sleep    5
-    Click Element    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[2]/div/div[2]/div    
+    Click Element    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[2]/div/div[2]/div    
     # Page Should Contain    Your account or password is incorrect. If you don't remember your password, reset it now. 
     Sleep    5   
     Click Element    xpath=//*[@id="menu-"]/div[3]/ul/li
     Sleep    5    
-    Click Element    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[3]/div/button/span[1]
+    Click Element    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[3]/div/button/span[1]
     Sleep    10    
     ${message}=    Handle Alert    action=ACCEPT
     Sleep    5   
     ${message1}=    Fetch From Right    ${message}    is:
-    Input Text    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[3]/div[2]/div[2]/input    ${message1} 
+    Input Text    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[3]/div[2]/div[2]/input    ${message1} 
     Sleep    10
-    Click Element    xpath=//*[@id="app"]/div/div/main/div[2]/div[2]/div/div[4]/button/span[1]
+    Click Element    xpath=//*[@id="app"]/div/div/main/div[3]/div[2]/div[2]/div[4]/button/span[1]
     Sleep    5       
-    
 VerifyPortal
     Select Window    MAIN
-    Sleep    15       
+    Sleep    25       
     Element Text Should Be    xpath=//*[@id="app"]/div/div/div/header/div/header/div/h6    FACULTY PORTAL
     Sleep    5        
     
@@ -136,6 +135,7 @@ EndMeetinginvirtual
     Sleep    5
     Click Element    xpath=//*[@id="menu-appbar"]/div[3]/ul/li/div 
     Sleep    5
-    Close Browser      
+    Close Browser    
+      
        
     
