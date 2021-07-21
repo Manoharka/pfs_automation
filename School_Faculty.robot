@@ -120,7 +120,7 @@ EndMeetinginvirtual
     Select Window    Ken42 Live Class - 2021-MATH-KEN-SC-Grade09-B 
                      # Ken42 Online Classroom - CSE - Course I - Offering A Term 1
     Sleep    5
-    Click Element    xpath=/html/body/div/main/section/div[1]/header/div/div[1]/div[3]/div/button[1]/span[1]    
+    Click Element    xpath=/html/body/div[1]/main/section/div[1]/header/div/div[1]/div[3]/div[2]/button/span[1]    
     Sleep    5
     Click Element    xpath=//*[@id="app"]/main/section/div[1]/header/div/div[1]/div[3]/div/div/div/ul/li[7]    
     Sleep    5
@@ -129,9 +129,9 @@ EndMeetinginvirtual
     
  Signout
     Select Window    Portal
-    Click Element    xpath=//*[@id="app"]/div/div/div/main/div[3]/div/div/div/div[3]/div[1]/ul/a[1]/div/span[2]  
+    Click Element    xpath=//*[@id="app"]/div/div/div/main/div[3]/div/div/div/div[4]/div[1]/ul/a[1]/div/span[2]  
     Sleep    5      
-    Click Element    xpath=//*[@id="app"]/div/div/div/header/div/header/div/div[2]/div/div[4]/button/span[1]
+    Click Element    xpath=//*[@id="app"]/div/div/div/header/div/header/div/div[2]/div/div/button/span[1]
     Sleep    5
     Click Element    xpath=//*[@id="menu-appbar"]/div[3]/ul/li/div 
     Sleep    5
