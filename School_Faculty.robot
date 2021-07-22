@@ -37,8 +37,8 @@ Test_faculty
 *** Keywords ***
 Login
     
-    Open Excel    C:/Users/CHROME/Desktop/Faculty_Login.xlsx
-    # Open Excel    ../pfs_automation/Faculty_Login.xlsx
+    # Open Excel    C:/Users/CHROME/Desktop/Faculty_Login.xlsx
+    Open Excel    ../pfs_automation/Faculty_Login.xlsx
     ${BaseUrl}=    Read Cell Data By Name    Faculty    A2    
     ${In_Username}=    Read Cell Data By Name    Faculty    B2                 
     # ${In_Password}=    Read Cell Data By Name    Student_Login    C2    
